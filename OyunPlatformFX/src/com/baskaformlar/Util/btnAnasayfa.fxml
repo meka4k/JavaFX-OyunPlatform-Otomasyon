@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #232b2b;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.baskaformlar.Util.btnAnasayfaController">
+   <children>
+      <ImageView fx:id="imageview1" fitHeight="150.0" fitWidth="200.0" layoutX="275.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/icons8_user_100px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageview2" fitHeight="44.0" fitWidth="49.0" layoutX="231.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/icons8_github_60px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageview3" fitHeight="44.0" fitWidth="44.0" layoutX="231.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/icons8_gmail_96px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="294.0" layoutY="49.0" text="YAPIMCI" textFill="#e17c7c">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="254.0" text="MEHMET KARAKUŞ" textFill="#dfffe4">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="290.0" layoutY="361.0" text="imeka4k@gmail.com" textFill="#dfffe4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="290.0" layoutY="417.0" text="github.com/meka4k" textFill="#dfffe4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

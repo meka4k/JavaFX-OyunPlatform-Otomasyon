@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorTumu" prefHeight="710.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnamenuController">
+   <children>
+      <BorderPane layoutX="125.0" layoutY="88.0" prefHeight="710.0" prefWidth="910.0" style="-fx-background-color: #151928;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="910.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="98.0" layoutY="23.0" prefHeight="24.0" prefWidth="910.0" style="-fx-background-color: #151928;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox layoutX="193.0" layoutY="22.0" prefHeight="37.0" prefWidth="716.0">
+                     <children>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="170.0" text="Anasayfa">
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8_home_64px.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="170.0" text="İletişim">
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8_communication_100px.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="170.0" text="Sepetim">
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8_shopping_cart_52px.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </Button>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="170.0" text="Yardım">
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8_help_48px.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label layoutX="66.0" layoutY="31.0" text="Menü" textFill="#615b5b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgMenu" fitHeight="24.0" fitWidth="32.0" layoutX="39.0" layoutY="28.0" onMouseClicked="#imgMenu_click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_Hamburger_Menu_96px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="AnchorSol" prefHeight="200.0" prefWidth="199.0" style="-fx-background-color: #151928;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="38.0" layoutY="158.0" prefHeight="492.0" prefWidth="197.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="158.0">
+                     <children>
+                        <Separator prefHeight="3.0" prefWidth="178.0" />
+                        <Button fx:id="btnProfil" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btnProfil_click" prefHeight="82.0" prefWidth="196.0" text="PROFİL">
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8_user_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnKutuphane" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btnKutuphane_click" prefHeight="82.0" prefWidth="196.0" text="KÜTÜPHANE">
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8_course_assign_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnMagaza" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btnMagaza_click" prefHeight="82.0" prefWidth="196.0" text="MAĞAZA">
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8_grocery_store_60px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnSatinAlim" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btnSatinAlim_click" prefHeight="82.0" prefWidth="196.0" text="SATIN ALIMLAR">
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8_get_cash_240px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnOyunTalep" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btnOyunTalep_click" prefHeight="82.0" prefWidth="196.0" text="OYUN EKLEME TALEP">
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8_dreaming_64px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnCikis" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btnCikis_click" prefHeight="82.0" prefWidth="196.0" text="ÇIKIŞ">
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8_Logout_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="79.0" fitWidth="108.0" layoutX="42.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_user_100px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="30.0" layoutY="96.0" text="AD-SOYAD:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="114.0" text="KULLANICI AD:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAdSoyad" layoutX="100.0" layoutY="96.0" text="none" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblKullanıcıAd" layoutX="100.0" layoutY="114.0" text="none" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="192.0" orientation="VERTICAL" prefHeight="159.0" prefWidth="3.0" />
+                  <Label layoutX="74.0" layoutY="134.0" text="ID:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblID" layoutX="101.0" layoutY="134.0" text="none" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="AnchorSag" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #151928;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

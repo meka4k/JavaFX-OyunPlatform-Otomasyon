@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <left>
+      <AnchorPane prefHeight="578.0" prefWidth="541.0" style="-fx-background-color: #151928;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtGiris" layoutX="185.0" layoutY="251.0" promptText="Kullanıcı adı" style="-fx-background-color: #F5F5DC; -fx-border-color: #1A4054; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="txtSifre" layoutX="185.0" layoutY="294.0" promptText="Şifre" style="-fx-background-color: #F5F5DC; -fx-border-color: #1A4054; -fx-border-width: 0px 0px 2px 0px;" />
+            <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="151.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Hafta4TekrarFX/src/img/user%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="151.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Hafta4TekrarFX/src/img/key.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_Giris" layoutX="259.0" layoutY="346.0" mnemonicParsing="false" onAction="#btn_Giris_click" prefHeight="27.0" prefWidth="72.0" style="-fx-background-color: #1A4054;" text="Giriş" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Hyperlink fx:id="btnSifreUnuttum" layoutX="199.0" layoutY="406.0" onAction="#btnSifreUnuttum_click" text="Şifremi Unuttum" />
+            <ImageView fitHeight="64.0" fitWidth="80.0" layoutX="215.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Hafta4TekrarFX/src/img/icons8_PlayStation_Buttons_48px.png" />
+               </image>
+            </ImageView>
+            <Text fill="#d8f3ff" layoutX="169.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kullanıcı Giriş Menüsü" wrappingWidth="180.322265625">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="lblkulad" layoutX="426.0" layoutY="321.0" text="Label" visible="false" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="578.0" prefWidth="530.0" style="-fx-background-color: #b4b6bc;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="193.0" fitWidth="204.0" layoutX="73.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/iste_arma_logo2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageKapat" fitHeight="32.0" fitWidth="32.0" layoutX="302.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8_cancel_96px.png" />
+               </image>
+            </ImageView>
+            <Text fill="#111b3c" layoutX="53.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="İSTE OYUN SATIŞ PLATFORMU" wrappingWidth="255.13671875">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imageFacebook" fitHeight="33.0" fitWidth="32.0" layoutX="146.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8_facebook_96px_2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageInstagram" fitHeight="32.0" fitWidth="32.0" layoutX="183.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8_Instagram_96px_1.png" />
+               </image>
+            </ImageView>
+            <Text fill="#111b3c" layoutX="62.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sen de aramıza katılmak ister misin ? ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Hyperlink fx:id="btnUyeOl" layoutX="126.0" layoutY="380.0" onAction="#btnUyeOl_click" text="Hemen üye ol." textFill="#3762ab">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Hyperlink>
+         </children></AnchorPane>
+   </right>
+</BorderPane>
